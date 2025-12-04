@@ -39,7 +39,7 @@ namespace users
                     break;
                 case 2:
                     newUser = new AdminUser("temp", "temp");
-                    newUser.SetRole("Regular User");
+                    newUser.SetRole("Regular User");//mafrod admin user
                     break;
                 case 3:
                     newUser = new GuestUser("temp", "temp");
