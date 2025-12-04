@@ -4,7 +4,7 @@
 
   
 
- public voiceMeessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice: {duration}secounds")
+ public voiceMeessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice message: {duration}secounds")
 
  {
 

@@ -1,27 +1,25 @@
- namespace message{class ImageMeessage : GeneralMassege
+ namespace messages {
+    
+    
+    
+    class ImageMeessage : GeneralMassege
+    {
+    
 
-{
+        public ImageMeessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver,$" Image message: {path}")
+        {
+            Textpath=path;
 
-  
+        }
+        string Textpath;
 
- public ImageMeessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver,$" Image message: {path}")
+        public string GetImageMessage()
+        {
+            
+            return Textpath;
+        }
 
- {
- Textpath=path;
 
-  
 
- }
 
- string Textpath;
-
-  
-
- public string GetImageMessage()
- {
-
- return Textpath;
-
-}
-
- }}
+    }}
