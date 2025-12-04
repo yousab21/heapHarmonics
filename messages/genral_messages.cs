@@ -70,7 +70,7 @@ namespace messages
     {
     
 
-        public ImageMeessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver,$"📷 Image: {path}")
+        public ImageMeessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver,$" Image message: {path}")
         {
             Textpath=path;
 
@@ -92,7 +92,7 @@ namespace messages
     
     {
 
-        public voiceMeessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice: {duration}secounds")
+        public voiceMeessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice message: {duration}secounds")
         {
             DurationTime=duration;
 
