@@ -1,0 +1,33 @@
+namespace messages{ class TextMeessage : GeneralMassege
+
+ {
+
+  
+
+ public TextMeessage(string messageID, string sender, string receiver,string text):base( messageID, sender, receiver, text)
+
+ {
+
+ Text=text;
+
+  
+
+ }
+
+ string Text;
+
+  
+
+ public string GettextMessage()
+
+ {
+ return Text;
+
+ }
+
+  
+  
+  
+  
+
+ }}
