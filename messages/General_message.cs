@@ -1,6 +1,6 @@
  namespace messages
 {
-    class GeneralMassege
+    class GeneralMessage
     {
         string messageID;
         string sender;
@@ -8,7 +8,7 @@
         string receiver;
         dynamic timestap = DateTime.Now;
 
-        public GeneralMassege(string messageID, string sender, string content, string receiver)
+        public GeneralMessage(string messageID, string sender, string content, string receiver)
         {
             this.messageID = messageID;
             this.content = content;

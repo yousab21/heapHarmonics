@@ -1,10 +1,10 @@
- namespace messages{ class voiceMeessage : GeneralMassege
+ namespace messages{ class voiceMessage : GeneralMessage
 
  {
 
   
 
- public voiceMeessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice message: {duration}secounds")
+ public voiceMessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice message: {duration}secounds")
 
  {
 

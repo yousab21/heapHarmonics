@@ -1,10 +1,10 @@
-namespace messages{ class TextMeessage : GeneralMassege
+namespace messages{ class TextMessage : GeneralMessage
 
  {
 
   
 
- public TextMeessage(string messageID, string sender, string receiver,string text):base( messageID, sender, receiver, text)
+ public TextMessage(string messageID, string sender, string receiver,string text):base( messageID, sender, receiver, text)
 
  {
 

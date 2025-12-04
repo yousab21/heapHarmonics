@@ -2,7 +2,7 @@
     
     
     
-    class ImageMeessage : GeneralMassege
+    class ImageMeessage : GeneralMessage
     {
     
 
