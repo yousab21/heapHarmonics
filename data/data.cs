@@ -8,7 +8,10 @@ namespace data
     public static class Data
     {
         // Static members
-        public static List<GeneralUser> allUsers = new List<GeneralUser>();
+        public static List<GeneralUser> allGeneralUsers = new List<GeneralUser>();
+        public static List<RegularUser> allRegularUsers = new List<RegularUser>();
+        public static List<GuestUser> allGuestUsers = new List<GuestUser>();
+        public static List<AdminUser> allAdminUsers = new List<AdminUser>();
         public static List<string> allMessages = new List<string>();
 
         // Static methods

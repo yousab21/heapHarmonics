@@ -6,17 +6,19 @@ namespace users
 
 public class GeneralUser
 {
-    private int userId;
-    private string name;
-    private string Status;
+    protected string userId;
+    protected string name;
+    protected string Status;
+    protected string Role;
 
-    public GeneralUser( int userId , string name ,string status ="OFFLINE")
+    public GeneralUser( string userId = "UNKOWN" , string name = "UNKOWN" ,string status ="OFFLINE", string Role="UNKOWN")
     {
         this.userId = userId;
         this.name = name;
         this.Status = status;
+        this.Role = Role;
     }
-    public int GetUserId()
+    public string GetUserId()
     {
         return userId;
     }
@@ -28,9 +30,25 @@ public class GeneralUser
     {
         return Status;
     }
+    public string GetRole()
+    {
+        return Role;
+    }
+    public void SetUserId(string newID)
+    {
+        userId = newID;
+    }
+    public void SetName(string newName)
+    {
+        name = newName;
+    }
     public void SetStatus(string newstatus)
     {
-        Status = newstatus; // online or offline maybe busy or anything 
+        Status = newstatus; 
+    }
+    public void SetRole(string newRole)
+    {
+        Role = newRole;
     }
     public void LogIn()
     {
@@ -45,13 +63,11 @@ public class GeneralUser
     public void DisplayUserInfo()
     {
         System.Console.WriteLine("----User Info----");
-        System.Console.WriteLine($"ID: {userId}");
+        System.Console.WriteLine($"User ID: {userId}");
         System.Console.WriteLine($"User Name: {name}");
-        System.Console.WriteLine($"User statu: {Status}");
-    }
-    public virtual void DisplayRole()
-    {
-        System.Console.WriteLine("Role: General User");
+        System.Console.WriteLine($"User status: {Status}");
+        System.Console.WriteLine($"User Role: {Role}");
+
     }
 
 }
