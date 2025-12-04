@@ -1,17 +1,16 @@
 using System;
-using System.Net.Sockets;
-using Microsoft.Win32.SafeHandles;
 
-namespace OnlineChat
+
+namespace users
 {
 
-public class User
+public class GeneralUser
 {
     private int userId;
     private string name;
     private string Status;
 
-    public User( int userId , string name ,string status ="OFFLINE")
+    public GeneralUser( int userId , string name ,string status ="OFFLINE")
     {
         this.userId = userId;
         this.name = name;
@@ -29,9 +28,9 @@ public class User
     {
         return Status;
     }
-    public void SetStatus(string newstatu)
+    public void SetStatus(string newstatus)
     {
-        Status = newstatu; // online or offline maybe busy or anything 
+        Status = newstatus; // online or offline maybe busy or anything 
     }
     public void LogIn()
     {
@@ -56,61 +55,5 @@ public class User
     }
 
 }
-public class Admin : User
-{
-    private List<User> allUsers;
-    private List<string> allMessages;
-  
-    public Admin(int userId,string name,List<User> users,List<string> messages):base(userId,name,"online")
-        {
-            allMessages = messages;
-            allUsers = users;
-        }
-    public void Add_User(User newUser)
-        {
-            allUsers.Add(newUser);
-            System.Console.WriteLine($"{newUser.GetName()} added to the system");
-        }
-    public void DeleteMessages()
-        {
-            allMessages.Clear();
-            System.Console.WriteLine("All messages have been deleted from the system");
-        }
-    public void ViewAllUsers()
-        {
-            System.Console.WriteLine("----All Users----");
-            foreach (User u in allUsers)
-            {
-                u.DisplayUserInfo();
-                u.DisplayRole();
-                System.Console.WriteLine("========================");
-            }
-        }
-    public void ChangeAnyUserStatus(int userId ,string newStatu)
-        {
-            User user = allUsers.Find(u => u.GetUserId() == userId);
-            if (user != null)
-            {
-                user.SetStatus(newStatu);
-                System.Console.WriteLine($"{user.GetName}'s new statu is {newStatu}");
-            }
-            else
-            {
-                System.Console.WriteLine("there is no user with that id");
-            }
-        }
-    public void BlockUser (int userId)
-        {
-            User user = allUsers.Find(u => u.GetUserId() == userId);
-            if (user != null)
-            {
-                user.SetStatus("Blocked");
-                System.Console.WriteLine($"{user.GetName} has been blocked");
-            }
-            else
-            {
-                System.Console.WriteLine("there is no user with that id");
-            }
-        }
-}
+
 }

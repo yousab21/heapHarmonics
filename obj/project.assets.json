@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\heapHarmonics\\SHELL_Chat\\SHELL_Chat.csproj",
+      "projectUniqueName": "E:\\heapHarmonics\\SHELL_Chat.csproj",
       "projectName": "SHELL_Chat",
-      "projectPath": "E:\\heapHarmonics\\SHELL_Chat\\SHELL_Chat.csproj",
+      "projectPath": "E:\\heapHarmonics\\SHELL_Chat.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "E:\\heapHarmonics\\SHELL_Chat\\obj\\",
+      "outputPath": "E:\\heapHarmonics\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"

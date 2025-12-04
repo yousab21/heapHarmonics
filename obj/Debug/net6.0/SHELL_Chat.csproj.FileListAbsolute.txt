@@ -1,0 +1,15 @@
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.csproj.AssemblyReference.cache
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.GeneratedMSBuildEditorConfig.editorconfig
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.AssemblyInfoInputs.cache
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.AssemblyInfo.cs
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.csproj.CoreCompileInputs.cache
+E:\heapHarmonics\bin\Debug\net6.0\SHELL_Chat.exe
+E:\heapHarmonics\bin\Debug\net6.0\SHELL_Chat.deps.json
+E:\heapHarmonics\bin\Debug\net6.0\SHELL_Chat.runtimeconfig.json
+E:\heapHarmonics\bin\Debug\net6.0\SHELL_Chat.dll
+E:\heapHarmonics\bin\Debug\net6.0\SHELL_Chat.pdb
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.dll
+E:\heapHarmonics\obj\Debug\net6.0\refint\SHELL_Chat.dll
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.pdb
+E:\heapHarmonics\obj\Debug\net6.0\SHELL_Chat.genruntimeconfig.cache
+E:\heapHarmonics\obj\Debug\net6.0\ref\SHELL_Chat.dll
