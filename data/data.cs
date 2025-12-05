@@ -13,8 +13,8 @@ namespace data
         public static List<GuestUser> allGuestUsers = new List<GuestUser>();
         public static List<AdminUser> allAdminUsers = new List<AdminUser>();
         public static List<string> allTextMessages = new List<TextMessage>();
-        public static List<string> allTextMessages = new List<VoiceMessage>();
-        public static List<string> allTextMessages = new List<ImageMeessage>();
+        public static List<string> allTextMessages = new List<VoiceMessage>();//msh mafrod allVoiceMessages
+        public static List<string> allTextMessages = new List<ImageMeessage>();//msh mafrod allImageMessages
 
 
         // Static methods
