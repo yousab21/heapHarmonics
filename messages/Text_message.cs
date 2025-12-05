@@ -8,7 +8,7 @@ namespace messages{
  {    
     private string Text;
      public TextMessage(string messageID, string sender, string receiver ,string text):base( messageID, sender, receiver){
-    this.Text=text;
+     this.Text=text;// msh m7tag this wla eh?
  }
 
    public string GettextMessage(){
