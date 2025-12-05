@@ -10,7 +10,7 @@ namespace users
     public class AdminUser : GeneralUser
     {
 
-        public AdminUser(string userId, string name, string status = "ONLINE"):base( userId, name, status)
+        public AdminUser(int userId, string name, string status = "ONLINE"):base( userId, name, status)
             {
             this.SetRole("Admin");
             }
@@ -20,7 +20,7 @@ namespace users
         {
             // ConsoleUtils.Refresh();
             int role;
-            string id;
+            int id;
             string name;
             string Role;
             GeneralUser newUser;
@@ -51,7 +51,7 @@ namespace users
             }
 
             Console.WriteLine("enter the new user's ID : ");
-            id = Console.ReadLine();
+            id = Console.ReadLine();                        // hna hytl3 error 3lshan el casting bs msh 3arf azbthh
             newUser.SetUserId(id);
             Console.WriteLine("enter the new user's Name : ");
             name = Console.ReadLine();
@@ -144,20 +144,20 @@ namespace users
             }
         }
 
-        // public void ChangeAnyUserStatus(int userId, string newStatus)
-        // {
-        //     GeneralUser user = Data.allUsers.Find(u => u.GetUserId() == userId);
+        public void ChangeAnyUserStatus(int userId, string newStatus)
+        {
+            GeneralUser user = Data.allGeneralUsers.Find(u => u.GetUserId() == userId);
 
-        //     if (user != null)
-        //     {
-        //         user.SetStatus(newStatus);
-        //         Console.WriteLine($"{user.GetName()}'s new status is {newStatus}");
-        //     }
-        //     else
-        //     {
-        //         Console.WriteLine("there is no user with that id");
-        //     }
-        // }
+            if (user != null)
+            {
+                user.SetStatus(newStatus);
+                Console.WriteLine($"{user.GetName()}'s new status is {newStatus}");
+            }
+            else
+            {
+                Console.WriteLine("there is no user with that id");
+            }
+        }
 
         // public void BlockUser(int userId)
         // {
