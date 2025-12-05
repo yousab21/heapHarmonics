@@ -80,11 +80,11 @@ namespace users
             Console.WriteLine();
         }
 
-        // public void DeleteMessages()
-        // {
-        //     Data.allMessages.Clear();
-        //     Console.WriteLine("All messages have been deleted from the system");
-        // }
+        public void DeleteMessages()
+        {
+            Data.allMessages.Clear();
+            Console.WriteLine("All messages have been deleted from the system");
+        }
 
         public void ViewAllUsers()
         {   
