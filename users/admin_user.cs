@@ -85,6 +85,25 @@ namespace users
             Data.allMessages.Clear();
             Console.WriteLine("All messages have been deleted from the system");
         }
+        public void DeleteTextMessages()
+        {
+
+            Data.allTextMessages.Clear();
+            Console.WriteLine("All text messages have been deleted from the system");
+        }
+        public void DeleteVoiceMessages()
+        {
+
+            Data.allVoiceMessages.Clear();
+            Console.WriteLine("All voice messages have been deleted from the system");
+        }
+        public void DeleteImageMessages()
+        {
+
+            Data.allImageMessages.Clear();
+            Console.WriteLine("All image messages have been deleted from the system");
+        }
+        // momken kda bardo lw 3ayz tms7 no3 mo7adad
 
         public void ViewAllUsers()
         {   
