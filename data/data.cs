@@ -15,6 +15,11 @@ namespace data
         public static List<string> allTextMessages = new List<TextMessage>();
         public static List<string> allVoiceMessages = new List<VoiceMessage>();//msh mafrod allVoiceMessages
         public static List<string> allImageMessages = new List<ImageMeessage>();//msh mafrod allImageMessages
+        public static List<GeneralMessage> allMessages = new List<GeneralMessage>();
+        allMessages.Add(new TextMessges());
+        allMessages.Add(new ImageMessges());
+        allMessages.Add(new VoiceMessges());
+        // da ykon list gwaha kol el lists b7eth ana 3ande lma a3ml delete ydoar hna eh rayko
 
 
         // Static methods
