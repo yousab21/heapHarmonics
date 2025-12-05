@@ -10,7 +10,7 @@ namespace users
     public class AdminUser : GeneralUser
     {
 
-        public AdminUser(string userId, string name, string status = "ONLINE")
+        public AdminUser(string userId, string name, string status = "ONLINE"):base( userId, name, status)
             {
             this.SetRole("Admin");
             }
@@ -80,11 +80,11 @@ namespace users
             Console.WriteLine();
         }
 
-        public void DeleteMessages()
-        {
-            Data.allMessages.Clear();
-            Console.WriteLine("All messages have been deleted from the system");
-        }
+        // public void DeleteMessages()
+        // {
+        //     Data.allMessages.Clear();
+        //     Console.WriteLine("All messages have been deleted from the system");
+        // }
 
         public void ViewAllUsers()
         {   
@@ -104,6 +104,24 @@ namespace users
             {
                 GU.DisplayUserInfo();
                 Console.WriteLine("========================");
+            }
+        }
+
+        public void ViewAllMessages()
+        {
+            ConsoleUtils.Refresh();
+            Console.WriteLine("----All Messages----");
+            foreach ( TextMessage TM in Data.allTextMessages)
+            {
+                TM.ViewTextMessage();
+            }
+            foreach ( VoiceMessage VM in Data.allVoiceMessages)
+            {
+                VM.ViewVoiceMessage();
+            }
+            foreach ( ImageMeessage IM in Data.allImageMessages)
+            {
+                IM.ViewImageMessage();
             }
         }
 

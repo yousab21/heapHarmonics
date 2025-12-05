@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bEMHchlSHkI=",
+  "dgSpecHash": "xU2olsho+HRlHEv1pLY1IgLPMkqW2WGsey97HGCX7NBpYWpqQtQMoEqrUND+NTvNUx4uJDdfTzNAzKIm126mGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LOQ\\Desktop\\heapHarmonics\\SHELL_Chat.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\LOQ\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\LOQ\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\LOQ\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\LOQ\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
-  ],
+  "projectFilePath": "E:\\heapHarmonics\\SHELL_Chat.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

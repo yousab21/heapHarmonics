@@ -1,31 +1,29 @@
- namespace messages{ class voiceMessage : GeneralMessage
+using System;
+using users;
+using data;
+using utils;
 
- {
+ namespace messages{
+class VoiceMessage : GeneralMessage{
+    private int DurationTime;
+    public VoiceMessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver) {
+    DurationTime=duration;
+    }
+    public int GetVoiceMessage(){
+    return DurationTime;
+    }
 
-  
+    public void ViewVoiceMessage(){
+    Console.WriteLine($"time[{Getime()}]");
+    Console.WriteLine($"type : [Voice Message]");
+    Console.WriteLine($"message ID : [{GetmessageID()}]");
+    Console.WriteLine($"from : [{Getsender()}]");
+    Console.WriteLine($"to : [{Getreceiver()}]");
+    Console.WriteLine($"Voice duration : \" {DurationTime} \"");
+    Console.WriteLine("================================");
+    }
 
- public voiceMessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver,$"voice message: {duration}secounds")
-
- {
-
- DurationTime=duration;
-
-  
-
- }
-
- int DurationTime;
-
-  
-
- public int GetVoiceMessage()
-
- {
-
- return DurationTime;
-
- }
-
- }}
+  }
+}
 
   

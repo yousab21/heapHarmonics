@@ -2,16 +2,16 @@
 {
     class GeneralMessage
     {
-        string messageID;
-        string sender;
-        string content;
-        string receiver;
+        protected string messageID;
+        protected string sender;
+
+        protected string receiver;
         dynamic timestap = DateTime.Now;
 
-        public GeneralMessage(string messageID, string sender, string content, string receiver)
+        public GeneralMessage(string messageID, string sender, string receiver)
         {
             this.messageID = messageID;
-            this.content = content;
+
             this.sender = sender;
             this.receiver = receiver;
         }
@@ -31,25 +31,13 @@
             return receiver;
         }
 
-        public string Getcontent()
-        {
-            return content;
-        }
-
         public dynamic Getime()
         {
             return timestap;
         }
-
-        public void Displaymessage()
-        {
-            System.Console.WriteLine($"[{timestap}] {sender} : {content}");
-        }
+        
     }
-      
-
- }
-
+}
   
 
 
