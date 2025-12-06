@@ -162,19 +162,19 @@ namespace users
             }
         }
 
-        // public void BlockUser(int userId)
-        // {
-        //     GeneralUser user = Data.allUsers.Find(u => u.GetUserId() == userId);
+        public void BlockUser(int userId)
+        {
+            GeneralUser user = Data.allGeneralUsers.Find(u => u.GetUserId() == userId);
 
-        //     if (user != null)
-        //     {
-        //         user.SetStatus("Blocked");
-        //         Console.WriteLine($"{user.GetName()} has been blocked");
-        //     }
-        //     else
-        //     {
-        //         Console.WriteLine("there is no user with that id");
-        //     }
-        // }
+            if (user != null)
+            {
+                user.SetStatus("Blocked");
+                Console.WriteLine($"{user.GetName()} has been blocked");
+            }
+            else
+            {
+                Console.WriteLine("there is no user with that id");
+            }
+        }
     }
 }
