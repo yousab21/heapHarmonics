@@ -61,12 +61,15 @@ namespace users
             {
                 case 1:
                     Data.allRegularUsers.Add((RegularUser)newUser);
+                    Data.allGeneralUsers.Add((RegularUser)newUser);
                     break;
                 case 2:
                     Data.allAdminUsers.Add((AdminUser)newUser);
+                    Data.allGeneralUsers.Add((AdminUser)newUser);
                     break;
                 case 3:
                     Data.allGuestUsers.Add((GuestUser)newUser);
+                    Data.allGeneralUsers.Add((GuestUser)newUser);
                     break;
                 default:
                     Console.WriteLine("Invalid role selected.");
