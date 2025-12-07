@@ -10,7 +10,7 @@ namespace users
     public class AdminUser : GeneralUser
     {
 
-        public AdminUser(int userId, string name, string status = "ONLINE"):base( userId, name, status)
+        public AdminUser(string userId, string name, string status = "ONLINE"):base( userId, name, status)
             {
             this.SetRole("Admin");
             }
@@ -20,7 +20,7 @@ namespace users
         {
             // ConsoleUtils.Refresh();
             int role;
-            int id;
+            string id;
             string name;
             string Role;
             GeneralUser newUser;
@@ -50,9 +50,9 @@ namespace users
                     return;
             }
 
-            Console.WriteLine("enter the new user's ID : ");
-            id = Console.ReadLine();                        // hna hytl3 error 3lshan el casting bs msh 3arf azbthh
-            newUser.SetUserId(id);
+            // Console.WriteLine("enter the new user's ID : ");
+            // id = Console.ReadLine();                        // hna hytl3 error 3lshan el casting bs msh 3arf azbthh
+            
             Console.WriteLine("enter the new user's Name : ");
             name = Console.ReadLine();
             newUser.SetName(name);
@@ -60,14 +60,17 @@ namespace users
             switch (role)
             {
                 case 1:
+                    newUser.SetUserId($"RU{Data.allRegularUsers.Count + 1}");
                     Data.allRegularUsers.Add((RegularUser)newUser);
                     Data.allGeneralUsers.Add((RegularUser)newUser);
                     break;
                 case 2:
+                    newUser.SetUserId($"AU{Data.allAdminUsers.Count + 1}");
                     Data.allAdminUsers.Add((AdminUser)newUser);
                     Data.allGeneralUsers.Add((AdminUser)newUser);
                     break;
                 case 3:
+                    newUser.SetUserId($"GU{Data.allGuestUsers.Count + 1}");
                     Data.allGuestUsers.Add((GuestUser)newUser);
                     Data.allGeneralUsers.Add((GuestUser)newUser);
                     break;
@@ -141,14 +144,39 @@ namespace users
             {
                 VM.ViewVoiceMessage();
             }
-            foreach ( ImageMeessage IM in Data.allImageMessages)
+            foreach ( ImageMessage IM in Data.allImageMessages)
             {
                 IM.ViewImageMessage();
             }
         }
 
-        public void ChangeAnyUserStatus(int userId, string newStatus)
+        public void ChangeAnyUserStatus()
         {
+            string userId;
+            int option;
+            string newStatus;
+            
+            Console.WriteLine("enter the ID of the user whose status you want to change: ");
+            userId = Console.ReadLine();
+            Console.WriteLine("enter the new status: ");
+            Console.WriteLine("1. ONLINE");
+            Console.WriteLine("2. OFFLINE");
+
+            option = Convert.ToInt32(Console.ReadLine());
+            if (option == 1)
+            {
+                newStatus = "ONLINE";
+            }
+            else if (option == 2)
+            {
+                newStatus = "OFFLINE";
+            }
+            else
+            {
+                Console.WriteLine("Invalid option selected.");
+                return;
+            }
+
             GeneralUser user = Data.allGeneralUsers.Find(u => u.GetUserId() == userId);
 
             if (user != null)
@@ -162,7 +190,7 @@ namespace users
             }
         }
 
-        public void BlockUser(int userId)
+        public void BlockUser(string userId)
         {
             GeneralUser user = Data.allGeneralUsers.Find(u => u.GetUserId() == userId);
 

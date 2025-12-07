@@ -4,7 +4,7 @@ using data;
 using utils;
 
 namespace messages{ 
-  class TextMessage : GeneralMessage
+  public class TextMessage : GeneralMessage
  {    
     private string Text;
      public TextMessage(string messageID, string sender, string receiver ,string text):base( messageID, sender, receiver){

@@ -13,10 +13,19 @@ namespace data
         public static List<AdminUser> allAdminUsers = new List<AdminUser>();
         public static List<GeneralUser> allGeneralUsers = new List<GeneralUser>();
         ///////////////////////////////////////////////////////////////////////////
-        public static List<string> allTextMessages = new List<TextMessage>();
-        public static List<string> allVoiceMessages = new List<VoiceMessage>();
-        public static List<string> allImageMessages = new List<ImageMeessage>();
+        public static List<TextMessage> allTextMessages = new List<TextMessage>();
+        public static List<VoiceMessage> allVoiceMessages = new List<VoiceMessage>();
+        public static List<ImageMessage> allImageMessages = new List<ImageMessage>();
         public static List<GeneralMessage> allMessages = new List<GeneralMessage>();
+
+
+        public static AdminUser SuperAdmin = new AdminUser("AU1", "HeapHarmonics");
+        public static void InitializeData()
+        {
+            allAdminUsers.Add(SuperAdmin);
+            allGeneralUsers.Add(SuperAdmin);
+        }
+
         
         // da ykon list gwaha kol elmo7twa bta3 el lists b7eth ana 3ande lma a3ml delete ydoar hna eh rayko
 

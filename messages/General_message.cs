@@ -1,6 +1,6 @@
  namespace messages
 {
-    class GeneralMessage
+    public class GeneralMessage
     {
         protected string messageID;
         protected string sender;

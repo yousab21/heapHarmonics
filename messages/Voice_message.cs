@@ -4,7 +4,7 @@ using data;
 using utils;
 
  namespace messages{
-class VoiceMessage : GeneralMessage{
+public class VoiceMessage : GeneralMessage{
     private int DurationTime;
     public VoiceMessage(string messageID, string sender, string receiver,int duration):base( messageID,  sender,  receiver) {
     DurationTime=duration;

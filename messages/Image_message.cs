@@ -4,10 +4,10 @@ using data;
 using utils;
 
 namespace messages {
-    class ImageMeessage : GeneralMessage
+    public class ImageMessage : GeneralMessage
     {
         private string ImagePath;
-        public ImageMeessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver)
+        public ImageMessage(string messageID, string sender, string receiver,string path):base( messageID,  sender,  receiver)
         {
             ImagePath=path;
         }
@@ -16,7 +16,7 @@ namespace messages {
             return ImagePath;
         }
 
-        public void ViewVoiceMessage(){
+        public void ViewImageMessage(){
         Console.WriteLine($"time[{Getime()}]");
         Console.WriteLine($"type : [Image Message]");
         Console.WriteLine($"message ID : [{GetmessageID()}]");
