@@ -11,7 +11,7 @@ public class GeneralUser
     protected string Status;
     protected string Role;
 
-    public GeneralUser( string userId = 0 , string name = "UNKOWN" ,string status ="OFFLINE", string Role="UNKOWN")
+    public GeneralUser( string userId = "0" , string name = "UNKOWN" ,string status ="OFFLINE", string Role="UNKOWN")
     {
         this.userId = userId;
         this.name = name;
