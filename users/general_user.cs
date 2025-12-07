@@ -6,19 +6,19 @@ namespace users
 
 public class GeneralUser
 {
-    protected int userId;
+    protected string userId;
     protected string name;
     protected string Status;
     protected string Role;
 
-    public GeneralUser( int userId = 0 , string name = "UNKOWN" ,string status ="OFFLINE", string Role="UNKOWN")
+    public GeneralUser( string userId = 0 , string name = "UNKOWN" ,string status ="OFFLINE", string Role="UNKOWN")
     {
         this.userId = userId;
         this.name = name;
         this.Status = status;
         this.Role = Role;
     }
-    public int GetUserId()
+    public string GetUserId()
     {
         return userId;
     }
@@ -34,7 +34,7 @@ public class GeneralUser
     {
         return Role;
     }
-    public void SetUserId(int newID)
+    public void SetUserId(string newID)
     {
         userId = newID;
     }
@@ -73,4 +73,5 @@ public class GeneralUser
 }
 
 }
+
 
