@@ -26,6 +26,14 @@ namespace data
             allGeneralUsers.Add(SuperAdmin);
         }
 
+        // public static RegularUser currentRegularUser = new RegularUser("RU0", "NoRegular");
+        // public static GuestUser currentGuestUser = new GuestUser("GU0", "NoGuest");
+        // public static AdminUser currentAdminUser = new AdminUser("AU0", "NoAdmin");
+
+        
+        
+
+
         
         // da ykon list gwaha kol elmo7twa bta3 el lists b7eth ana 3ande lma a3ml delete ydoar hna eh rayko
 
