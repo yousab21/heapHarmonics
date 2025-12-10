@@ -5,6 +5,7 @@ using messages;
 using users;
 using utils;
 using data;
+using mainApp;
 
 namespace mainApp
 {
@@ -18,7 +19,9 @@ class main
   public static GuestUser currentGuestUser ;
   public static AdminUser currentAdminUser ;
   public static void SwitchUser(string ID)
+  {
 {
+
  switch (ID[0])
  {
     case 'R':
@@ -70,6 +73,7 @@ class main
         Console.WriteLine("Invalid ID");
         break;
  }
+}
 }
   public static void Main(string[] args)
   {

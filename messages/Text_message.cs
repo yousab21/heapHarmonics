@@ -16,7 +16,7 @@ namespace messages{
     }
 
     public void ViewTextMessage(){
-      Console.WriteLine($"time[{Getime()}]");
+      Console.WriteLine($"time [{Getime()}]");
       Console.WriteLine($"type : [Text Message]");
       Console.WriteLine($"message ID : [{GetmessageID()}]");
       Console.WriteLine($"from : [{Getsender()}]");

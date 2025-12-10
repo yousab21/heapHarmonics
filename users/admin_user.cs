@@ -148,6 +148,10 @@ namespace users
             {
                 IM.ViewImageMessage();
             }
+            foreach ( TextMessage PCM in Data.PublicChat)
+            {
+                PCM.ViewTextMessage();
+            }
         }
 
         public void ChangeAnyUserStatus()
@@ -190,10 +194,13 @@ namespace users
             }
         }
 
-        public void BlockUser(string userId)
+        public void BlockUser()
         {
+            string userId;
+            Console.WriteLine("enter the ID of the user you want to block: ");
+            userId = Console.ReadLine();
             GeneralUser user = Data.allGeneralUsers.Find(u => u.GetUserId() == userId);
-
+    
             if (user != null)
             {
                 user.SetStatus("Blocked");
@@ -204,5 +211,7 @@ namespace users
                 Console.WriteLine("there is no user with that id");
             }
         }
+
+
     }
 }

@@ -107,6 +107,41 @@ namespace users
         Console.WriteLine();
     }
 
-    }
+    public void ViewChatHistory()
+    {
+        Console.WriteLine($"Chat history for user: {this.GetName()}");
+        Console.WriteLine("=======================================");
+        Console.WriteLine("Text Messages:");
+        Console.WriteLine(".......................................");
+        foreach ( TextMessage TM in Data.allTextMessages)
+        {
+            if (TM.Getsender() == this.GetUserId() || TM.Getreceiver() == this.GetUserId())
+            {
+                TM.ViewTextMessage();
+            }
+        }
+        Console.WriteLine("=======================================");
+        Console.WriteLine("Voice Messages:");
+        Console.WriteLine(".......................................");
+        foreach ( VoiceMessage VM in Data.allVoiceMessages)
+        {
+            if (VM.Getsender() == this.GetUserId() || VM.Getreceiver() == this.GetUserId())
+            {
+                VM.ViewVoiceMessage();
+            }
+        }
+        Console.WriteLine("=======================================");
+        Console.WriteLine("Image Messages:");
+        Console.WriteLine(".......................................");
+        foreach ( ImageMessage IM in Data.allImageMessages)
+        {
+            if (IM.Getsender() == this.GetUserId() || IM.Getreceiver() == this.GetUserId())
+            {
+                IM.ViewImageMessage();
+            }
 
+        }
+    }
+    
+}
 }

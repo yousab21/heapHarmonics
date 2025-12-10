@@ -18,6 +18,7 @@ namespace data
         public static List<ImageMessage> allImageMessages = new List<ImageMessage>();
         public static List<GeneralMessage> allMessages = new List<GeneralMessage>();
 
+        public static List<TextMessage> PublicChat = new List<TextMessage>();
 
         public static AdminUser SuperAdmin = new AdminUser("AU1", "HeapHarmonics");
         public static void InitializeData()
