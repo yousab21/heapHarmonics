@@ -142,6 +142,30 @@ namespace users
 
         }
     }
+    public void DeleteMyMessage(string messageId)
+        {
+            GeneralMessage required_message = null;
+            foreach(GeneralMessage obj in Data.allMessages)
+            {
+                if (obj.GetmessageID()== messageId && obj.Getsender() == this.GetUserId())
+                {
+                    required_message = obj;
+                    break;
+                }
+            }
+            if(required_message == null)
+            {
+                System.Console.WriteLine("Message not found or you are not the sender :(");
+                return; // 3l4an mykml4 l7d ma ytb3 "Your message deleted successfully :)" 
+            }
+
+            Data.allMessages.Remove(required_message);
+            Data.allTextMessages.Remove(required_message as TextMessage);
+            Data.allImageMessages.Remove(required_message as ImageMessage);
+            Data.allVoiceMessages.Remove(required_message as VoiceMessage);
+
+            System.Console.WriteLine(" Your message deleted successfully :) ");
+        }
     
 }
 }
