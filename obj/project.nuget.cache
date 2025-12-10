@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xU2olsho+HRlHEv1pLY1IgLPMkqW2WGsey97HGCX7NBpYWpqQtQMoEqrUND+NTvNUx4uJDdfTzNAzKIm126mGg==",
+  "dgSpecHash": "nCB76x0HcVK4whvJhGsEH5oMhdzWZVV3Gt/mI8Cd9sdfPF+a4QCFLcfoq+KDCkA33wmSztENKVm52eqs6a1LeQ==",
   "success": true,
-  "projectFilePath": "E:\\heapHarmonics\\SHELL_Chat.csproj",
+  "projectFilePath": "E:\\GitHub-Repositories\\heapHarmonics\\SHELL_Chat.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -80,26 +80,23 @@ class main
   ConsoleUtils.Refresh();
   Data.InitializeData();
   currentAdminUser=Data.SuperAdmin;
+        screens.WelcomeScreen();
+        screens.LoginScreen();
 
-  currentAdminUser.Add_User();
-  currentAdminUser.ViewAllUsers();
-
-  Console.WriteLine("Enter your User ID to switch:");
-  string userID=Console.ReadLine();
-  SwitchUser(userID);
-
-  switch (Mode)
-      {
-        case "Regular":
-          Console.WriteLine($"Switched to Regular User: {currentRegularUser.GetName()}");
-          break;
-        case "Admin":
-          Console.WriteLine($"Switched to Admin User: {currentAdminUser.GetName()}");
-          break;
-        case "Guest":
-          Console.WriteLine($"Switched to Guest User: {currentGuestUser.GetName()}");
-          break;    
-      }
+        switch (Mode)
+        {
+          case "Admin":
+            screens.AdminMenu();
+            break;
+          case "Regular":
+            screens.RegularMenu();
+            break;
+          case "Guest":
+            screens.GuestMenu();
+            break;
+          default:
+            break;
+        }
   }
   // ConsoleUtils.Refresh();
   //   Data.InitializeData();
