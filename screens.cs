@@ -120,10 +120,12 @@ namespace mainApp
     Console.WriteLine("2. Send Text Message");
     Console.WriteLine("3. Send Voice Message");
     Console.WriteLine("4. Send Image Message");
-    Console.WriteLine("5. View Chat History");
-    Console.WriteLine("6. Send To Public Chat");
-    Console.WriteLine("7. View Public Chat");
-    Console.WriteLine("8. Log Out");
+    Console.WriteLine("5. React to a message ");
+    Console.WriteLine("6. View Chat History");
+    Console.WriteLine("7. Send To Public Chat");
+    Console.WriteLine("8. View Public Chat");
+    Console.WriteLine("9. Log Out");
+    
     Console.WriteLine("===================================");
 
     bool validChoice = false;
@@ -153,18 +155,22 @@ namespace mainApp
           validChoice = true;
           break;
         case 5:
-          main.currentRegularUser.ViewChatHistory();
+          main.currentRegularUser.ReactToMessage();
           validChoice = true;
           break;
         case 6:
-          main.currentRegularUser.SendInPublicChat();
+          main.currentRegularUser.ViewChatHistory();
           validChoice = true;
           break;
         case 7:
-          main.currentRegularUser.viewPublicChat();
+          main.currentRegularUser.SendInPublicChat();
           validChoice = true;
           break;
         case 8:
+          main.currentRegularUser.viewPublicChat();
+          validChoice = true;
+          break;
+        case 9:
           main.currentRegularUser.LogOut();
           validChoice = true;
           main.Mode = "";
