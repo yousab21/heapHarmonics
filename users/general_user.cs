@@ -123,6 +123,7 @@ public void viewOnlineUsers()
     Console.WriteLine("===================================");
 }
     
+    public string emoji { get; set; } = "";
     public void ReactToMessage()
         {
             System.Console.WriteLine("Enter the ID of the message u want to react to");
@@ -183,6 +184,7 @@ public void viewOnlineUsers()
 
 }
 }
+
 
 
 
