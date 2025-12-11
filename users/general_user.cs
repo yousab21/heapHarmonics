@@ -122,8 +122,67 @@ public void viewOnlineUsers()
         }
     Console.WriteLine("===================================");
 }
+    
+    public void ReactToMessage()
+        {
+            System.Console.WriteLine("Enter the ID of the message u want to react to");
+            string messageid = Console.ReadLine();
+
+            GeneralMessage required_message2 = null;
+
+            foreach (GeneralMessage obj2 in Data.allMessages)
+            {
+                if(obj2.GetmessageID() == messageid)
+                {
+                    required_message2 = obj2;
+                    break;
+                }
+            }
+            if(required_message2== null)
+            {
+                System.Console.WriteLine("Message not found :(");
+                return;
+            }
+            System.Console.WriteLine("===Choose an Emoji");
+            System.Console.WriteLine("1.♥️");
+            System.Console.WriteLine("2.😂");
+            System.Console.WriteLine("3.👍🏻");
+            System.Console.WriteLine("4.😭");
+            System.Console.WriteLine("5.😡");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            string emoji="";
+
+            switch (choice)
+            {
+                case 1:
+                emoji = "♥️";
+                break;
+
+                case 2:
+                emoji = "😂";
+                break;
+
+                case 3:
+                emoji = "👍🏻";
+                break;
+
+                case 4:
+                emoji = "😭";
+                break;
+
+                case 5:
+                emoji = "😡";
+                break;
+                default:
+                System.Console.WriteLine("Invalid choice");
+                return;
+            }
+            System.Console.WriteLine($"You reacted to message {messageid} with {emoji}");
+        }
 
 }
 }
+
 
 
