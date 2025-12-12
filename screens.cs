@@ -58,11 +58,7 @@ namespace mainApp
           main.currentAdminUser.Add_User();
           validChoice = true;
           break;
-        case 2: // hna kan fe error elfunction bta5d parameter
-          Console.ForegroundColor = ConsoleColor.Cyan;
-          Console.WriteLine("Enter the ID you want to block");
-          Console.ResetColor();
-          string IdToBlock = Console.ReadLine();
+        case 2:
           main.currentAdminUser.BlockUser();
           validChoice = true;
           break;
