@@ -81,6 +81,8 @@ class main
   Data.InitializeData();
   currentAdminUser=Data.SuperAdmin;
         screens.WelcomeScreen();
+
+        for (int i = 0; i < 5; i++) {
         screens.LoginScreen();
 
         switch (Mode)
@@ -96,6 +98,7 @@ class main
             break;
           default:
             break;
+        }
         }
   }
   // ConsoleUtils.Refresh();

@@ -123,27 +123,12 @@ public void viewOnlineUsers()
     Console.WriteLine("===================================");
 }
     
-    public string emoji { get; set; } = "";
     public void ReactToMessage()
         {
             System.Console.WriteLine("Enter the ID of the message u want to react to");
             string messageid = Console.ReadLine();
 
-            GeneralMessage required_message2 = null;
 
-            foreach (GeneralMessage obj2 in Data.allMessages)
-            {
-                if(obj2.GetmessageID() == messageid)
-                {
-                    required_message2 = obj2;
-                    break;
-                }
-            }
-            if(required_message2== null)
-            {
-                System.Console.WriteLine("Message not found :(");
-                return;
-            }
             System.Console.WriteLine("===Choose an Emoji");
             System.Console.WriteLine("1.♥️");
             System.Console.WriteLine("2.😂");
@@ -157,15 +142,15 @@ public void viewOnlineUsers()
             switch (choice)
             {
                 case 1:
-                emoji = "♥️";
+                emoji = "👍";
                 break;
 
                 case 2:
-                emoji = "😂";
+                emoji = "♥️";
                 break;
 
                 case 3:
-                emoji = "👍🏻";
+                emoji = "😂";
                 break;
 
                 case 4:
@@ -179,6 +164,22 @@ public void viewOnlineUsers()
                 System.Console.WriteLine("Invalid choice");
                 return;
             }
+
+            foreach (GeneralMessage message in Data.allMessages)
+            {
+                if(message.GetmessageID() == messageid)
+                {
+                    message.emojis += emoji;
+                    break;
+                }
+                else
+                {
+                    System.Console.WriteLine("Message not found :(");
+                    return;
+                }
+            }
+
+
             System.Console.WriteLine($"You reacted to message {messageid} with {emoji}");
         }
 

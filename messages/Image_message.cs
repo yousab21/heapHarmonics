@@ -23,6 +23,7 @@ namespace messages {
         Console.WriteLine($"from : [{Getsender()}]");
         Console.WriteLine($"to : [{Getreceiver()}]");
         Console.WriteLine($"Image path : \" {ImagePath} \"");
+        Console.WriteLine($"emojis : [{emojis}]");
         Console.WriteLine("================================");
         }
 

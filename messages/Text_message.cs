@@ -22,6 +22,7 @@ namespace messages{
       Console.WriteLine($"from : [{Getsender()}]");
       Console.WriteLine($"to : [{Getreceiver()}]");
       Console.WriteLine($"message : \" {Text} \"");
+      Console.WriteLine($"emojis : [{emojis}]");
       Console.WriteLine("================================");
     }
   }

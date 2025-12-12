@@ -63,7 +63,7 @@ namespace mainApp
           Console.WriteLine("Enter the ID you want to block");
           Console.ResetColor();
           string IdToBlock = Console.ReadLine();
-          main.currentAdminUser.BlockUser(IdToBlock);
+          main.currentAdminUser.BlockUser();
           validChoice = true;
           break;
         case 3:

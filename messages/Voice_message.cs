@@ -20,6 +20,7 @@ public class VoiceMessage : GeneralMessage{
     Console.WriteLine($"from : [{Getsender()}]");
     Console.WriteLine($"to : [{Getreceiver()}]");
     Console.WriteLine($"Voice duration : \" {DurationTime} \"");
+    Console.WriteLine($"emojis : [{emojis}]");
     Console.WriteLine("================================");
     }
 

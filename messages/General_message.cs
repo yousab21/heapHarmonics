@@ -12,6 +12,7 @@
         protected string sender;
 
         protected string receiver;
+        public string emojis = "";
         dynamic timestap = DateTime.Now;
 
         public GeneralMessage(string messageID, string sender, string receiver)
