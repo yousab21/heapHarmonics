@@ -130,9 +130,9 @@ public void viewOnlineUsers()
 
 
             System.Console.WriteLine("===Choose an Emoji");
-            System.Console.WriteLine("1.♥️");
-            System.Console.WriteLine("2.😂");
-            System.Console.WriteLine("3.👍🏻");
+            System.Console.WriteLine("1.👍");
+            System.Console.WriteLine("2.♥️");
+            System.Console.WriteLine("3.😂");
             System.Console.WriteLine("4.😭");
             System.Console.WriteLine("5.😡");
 
@@ -185,6 +185,7 @@ public void viewOnlineUsers()
 
 }
 }
+
 
 
 
