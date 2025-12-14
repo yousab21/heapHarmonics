@@ -30,26 +30,28 @@
 
         public string Getsender()
         {   
-            foreach (GeneralUser user in data.Data.allGeneralUsers)
-            {
-                if (user.GetUserId() == sender)
-                {
-                    return user.GetName();
-                }
-            }
-            return "UNKOWN";
+         return sender;
+            // foreach (GeneralUser user in data.Data.allGeneralUsers)
+            // {
+            //     if (user.GetUserId() == sender)
+            //     {
+            //         return user.GetName();
+            //     }
+            // }
+            // return "UNKOWN";
         }
 
         public string Getreceiver()
         {
-            foreach (GeneralUser user in data.Data.allGeneralUsers)
-            {
-                if (user.GetUserId() == receiver)
-                {
-                    return user.GetName();
-                }
-            }
-            return "UNKOWN";
+         return receiver;
+            // foreach (GeneralUser user in data.Data.allGeneralUsers)
+            // {
+            //     if (user.GetUserId() == receiver)
+            //     {
+            //         return user.GetName();
+            //     }
+            // }
+            // return "UNKOWN";
         }
 
         public dynamic Getime()
