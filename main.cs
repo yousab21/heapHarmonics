@@ -6,6 +6,7 @@ using users;
 using utils;
 using data;
 using mainApp;
+using System.Security.Cryptography.X509Certificates;
 
 namespace mainApp
 {
@@ -80,10 +81,15 @@ class main
   ConsoleUtils.Refresh();
   Data.InitializeData();
   currentAdminUser=Data.SuperAdmin;
-        screens.WelcomeScreen();
+  SwitchUser("AU1");
 
-        for (int i = 0; i < 5; i++) {
+        screens.WelcomeScreen();
+        
+        while(true){
+
+        if (Mode==""){
         screens.LoginScreen();
+        }
 
         switch (Mode)
         {
@@ -99,21 +105,7 @@ class main
           default:
             break;
         }
-        }
-  }
-  // ConsoleUtils.Refresh();
-  //   Data.InitializeData();
-
-
-  //   Data.SuperAdmin.Add_User();
-  //   Data.SuperAdmin.Add_User();
-
-  //   Data.SuperAdmin.ViewAllUsers();
-
-  //   Data.allRegularUsers[0].SendTextMessage();
-  //   Data.allRegularUsers[0].SendVoiceMessage();
-  //   Data.allRegularUsers[0].SendImageMessage();
-
-  //   Data.SuperAdmin.ViewAllMessages();
+    }
+}
 }
 }

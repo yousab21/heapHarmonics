@@ -113,7 +113,7 @@ namespace users
 
         public void ViewAllUsers()
         {   
-            ConsoleUtils.Refresh();
+
             Console.WriteLine("----All Users----");
             foreach ( AdminUser AU in Data.allAdminUsers)
             {
@@ -134,7 +134,7 @@ namespace users
 
         public void ViewAllMessages()
         {
-            ConsoleUtils.Refresh();
+
             Console.WriteLine("----All Messages----");
             foreach ( TextMessage TM in Data.allTextMessages)
             {

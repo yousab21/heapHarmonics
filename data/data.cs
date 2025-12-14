@@ -21,6 +21,9 @@ namespace data
         public static List<TextMessage> PublicChat = new List<TextMessage>();
 
         public static AdminUser SuperAdmin = new AdminUser("AU1", "HeapHarmonics");
+
+        public static string Buffer = "";
+
         public static void InitializeData()
         {
             allAdminUsers.Add(SuperAdmin);

@@ -11,23 +11,32 @@ namespace mainApp
   {
     public static void WelcomeScreen()
     {
-        Console.WriteLine("Welcome to SHELL-Chat !");
-        Console.WriteLine("HeapHarmonics's CLI based chat application");
+      Console.Clear();
+      Data.Buffer="Welcome to Heap Harmonics Chat Application!";
     }
 
     public static void LoginScreen()
     {
       Console.Clear();
       Console.ForegroundColor = ConsoleColor.Yellow;
+      Console.WriteLine( "    [ " + Data.Buffer + " ]    ");
+      Console.WriteLine();
+      Console.ResetColor();
+      Console.ForegroundColor = ConsoleColor.Yellow;
       Console.WriteLine("Please enter your User ID to log in:");
       Console.ResetColor();
       string userID=Console.ReadLine();
       main.SwitchUser(userID);
+      Data.Buffer="Logged in as "+userID;
     }
 
     public static void AdminMenu()
-    {
+    { 
       Console.Clear();
+      Console.ForegroundColor = ConsoleColor.Yellow;
+      Console.WriteLine( "    [ " + Data.Buffer + " ]    ");
+      Console.WriteLine();
+      Console.ResetColor();
       Console.ForegroundColor = ConsoleColor.DarkGreen;
       Console.WriteLine("Welcome " + main.currentAdminUser.GetName() + " (Admin)");
       Console.ResetColor();
@@ -57,49 +66,110 @@ namespace mainApp
         case 1:
           main.currentAdminUser.Add_User();
           validChoice = true;
+          Data.Buffer="User added successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 2:
           main.currentAdminUser.BlockUser();
           validChoice = true;
+          Data.Buffer="User blocked successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 3:
           main.currentAdminUser.ChangeAnyUserStatus();
           validChoice = true;
+          Data.Buffer="User status changed successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 4:
           main.currentAdminUser.viewOnlineUsers();
           validChoice = true;
+          Data.Buffer="Displayed online users.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 5:
           main.currentAdminUser.ViewAllUsers();
           validChoice = true;
+          Data.Buffer="Displayed all users.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 6:
           main.currentAdminUser.ViewAllMessages();
           validChoice = true;
+          Data.Buffer="Displayed all messages.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 7:
           main.currentAdminUser.DeleteMessages();
           validChoice = true;
+          Data.Buffer="All messages deleted.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 8:
           main.currentAdminUser.SendInPublicChat();
           validChoice = true;
+          Data.Buffer="Message sent to Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 9:
           main.currentAdminUser.viewPublicChat();
           validChoice = true;
+          Data.Buffer="Displayed Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 10:
           main.currentAdminUser.LogOut();
           validChoice = true;
           main.Mode = "";
+          Data.Buffer="Logged out successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         default:
           Console.ForegroundColor = ConsoleColor.Red;
           Console.WriteLine("Invalid choice. Please try again.");
           Console.ResetColor();
           validChoice = false;
+          Data.Buffer="Invalid choice please try again.";
           break;
       }
     }
@@ -108,6 +178,10 @@ namespace mainApp
   public static void RegularMenu()
   {
     Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine( "    [ " + Data.Buffer + " ]    ");
+    Console.WriteLine();
+    Console.ResetColor();
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("Welcome " + main.currentRegularUser.GetName() + " (Regular User)");
     Console.ResetColor();
@@ -137,45 +211,101 @@ namespace mainApp
         case 1:
           main.currentRegularUser.viewOnlineUsers();
           validChoice = true;
+          Data.Buffer="Displayed online users.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 2:
           main.currentRegularUser.SendTextMessage();
           validChoice = true;
+          Data.Buffer="Text message sent successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 3:
           main.currentRegularUser.SendVoiceMessage();
           validChoice = true;
+          Data.Buffer="Voice message sent successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 4:
           main.currentRegularUser.SendImageMessage();
           validChoice = true;
+          Data.Buffer="Image message sent successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 5:
           main.currentRegularUser.ReactToMessage();
           validChoice = true;
+          Data.Buffer="Reacted to message successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 6:
           main.currentRegularUser.ViewChatHistory();
           validChoice = true;
+          Data.Buffer="Displayed chat history.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 7:
           main.currentRegularUser.SendInPublicChat();
           validChoice = true;
+          Data.Buffer="Message sent to Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 8:
           main.currentRegularUser.viewPublicChat();
           validChoice = true;
+          Data.Buffer="Displayed Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 9:
           main.currentRegularUser.LogOut();
           validChoice = true;
           main.Mode = "";
+          Data.Buffer="Logged out successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         default:
           Console.ForegroundColor = ConsoleColor.Red;
           Console.WriteLine("Invalid choice. Please try again.");
           Console.ResetColor();
           validChoice = false;
+          Data.Buffer="Invalid choice please try again.";
+          Console.ReadKey();
           break;
       }
     } 
@@ -184,6 +314,10 @@ namespace mainApp
   public static void GuestMenu()
   {
     Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine( "    [ " + Data.Buffer + " ]    ");
+    Console.WriteLine();
+    Console.ResetColor();
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("Welcome " + main.currentGuestUser.GetName() + " (Guest User)");
     Console.ResetColor();
@@ -207,25 +341,51 @@ namespace mainApp
         case 1:
           main.currentGuestUser.viewOnlineUsers();
           validChoice = true;
+          Data.Buffer="Displayed online users.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 2:
           main.currentGuestUser.SendInPublicChat();
           validChoice = true;
+          Data.Buffer="Message sent to Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 3:
           main.currentGuestUser.viewPublicChat();
           validChoice = true;
+          Data.Buffer="Displayed Public Chat.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           break;
         case 4:
           main.currentGuestUser.LogOut();
           validChoice = true;
+          Data.Buffer="Logged out successfully.";
+          Console.WriteLine();
+          Console.ForegroundColor = ConsoleColor.Blue;
+          Console.WriteLine("Press any key to continue...");
+          Console.ResetColor();
+          Console.ReadKey();
           main.Mode = "";
           break;
         default:
           Console.ForegroundColor = ConsoleColor.Red;
           Console.WriteLine("Invalid choice. Please try again.");
+          
           Console.ResetColor();
           validChoice = false;
+          Data.Buffer="Invalid choice please try again.";
           break;
       }
     }
