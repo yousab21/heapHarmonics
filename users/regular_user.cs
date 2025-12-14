@@ -24,14 +24,22 @@ namespace users
         Console.WriteLine("enter your text message : ");
         messageText = Console.ReadLine();
 
+        bool found = false;
         foreach (users.GeneralUser user in Data.allGeneralUsers)
         {
             if (user.GetUserId() == receiverID)
             {
                 Console.WriteLine($"User found: {user.GetName()}");
+                found = true;
                 break;
-                return;
+           
             }
+        }
+
+        if (!found)
+        {
+         Console.WriteLine("User not found");
+         return;
         }
 
         newTextMessage = new TextMessage($"TM{Data.allTextMessages.Count + 1}", this.GetUserId(), receiverID, messageText);
@@ -54,15 +62,20 @@ namespace users
         receiverID = Console.ReadLine();
         Console.WriteLine("enter the duration of your Voice message : ");
         VoiceLeanth = Convert.ToInt32(Console.ReadLine());
-
+        
+        bool found = false;
         foreach (users.GeneralUser user in Data.allGeneralUsers)
         {
             if (user.GetUserId() == receiverID)
             {
                 Console.WriteLine($"User found: {user.GetName()}");
                 break;
-                return;
             }
+        }
+         if (!found)
+        {
+         Console.WriteLine("User not found");
+         return;
         }
 
         newVoiceMessage = new VoiceMessage($"VM{Data.allVoiceMessages.Count + 1}", this.GetUserId(), receiverID, VoiceLeanth);
@@ -86,14 +99,19 @@ namespace users
         Console.WriteLine("enter the path the image you want to send : ");
         Path = Console.ReadLine();
 
+        bool found = false;
         foreach (users.GeneralUser user in Data.allGeneralUsers)
         {
             if (user.GetUserId() == receiverID)
             {
                 Console.WriteLine($"User found: {user.GetName()}");
                 break;
-                return;
             }
+        }
+         if (!found)
+        {
+         Console.WriteLine("User not found");
+         return;
         }
 
         newImageMessage = new ImageMessage($"IM{Data.allImageMessages.Count + 1}", this.GetUserId(), receiverID, Path);
