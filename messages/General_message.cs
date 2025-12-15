@@ -54,7 +54,7 @@
             // return "UNKOWN";
         }
 
-        public dynamic Getime()
+        public dynamic Gettime()
         {
             return timestap;
         }
