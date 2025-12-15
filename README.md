@@ -74,12 +74,11 @@ The logic layer is decoupled from storage and presentation, allowing the system 
 ---
 
 ## 👨‍💻 Team — Heap Harmonics
-
-* **Yousab Nabil**
 * **Omar Shehata**
 * **Omar Abd El Hai**
 * **Omar Ragaa**
 * **Yahia El Safty**
+* **Yousab Nabil**
 
 ---
 
