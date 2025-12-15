@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nCB76x0HcVK4whvJhGsEH5oMhdzWZVV3Gt/mI8Cd9sdfPF+a4QCFLcfoq+KDCkA33wmSztENKVm52eqs6a1LeQ==",
+  "dgSpecHash": "XJjDlJwpdms=",
   "success": true,
-  "projectFilePath": "E:\\GitHub-Repositories\\heapHarmonics\\SHELL_Chat.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\omarm\\Documents\\GitHub\\heapHarmonics\\SHELL_Chat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }
