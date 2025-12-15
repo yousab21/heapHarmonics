@@ -61,7 +61,14 @@ namespace users
         Console.WriteLine("enter the id of the user you want to send message to : ");
         receiverID = Console.ReadLine();
         Console.WriteLine("enter the duration of your Voice message : ");
-        VoiceLeanth = Convert.ToInt32(Console.ReadLine());
+        string input = Console.ReadLine();
+             if (!int.TryParse(input, out VoiceLeanth))
+             {         
+                 Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid duration! Please enter numbers only.");
+                Console.ResetColor();
+                return;
+             }
         
         bool found = false;
         foreach (users.GeneralUser user in Data.allGeneralUsers)
