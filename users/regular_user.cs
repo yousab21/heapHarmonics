@@ -76,6 +76,7 @@ namespace users
             if (user.GetUserId() == receiverID)
             {
                 Console.WriteLine($"User found: {user.GetName()}");
+                found = true;
                 break;
             }
         }
@@ -112,6 +113,7 @@ namespace users
             if (user.GetUserId() == receiverID)
             {
                 Console.WriteLine($"User found: {user.GetName()}");
+                found = true;
                 break;
             }
         }
