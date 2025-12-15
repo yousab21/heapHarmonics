@@ -26,50 +26,55 @@ class main
  switch (ID[0])
  {
     case 'R':
-        foreach (RegularUser ru in Data.allRegularUsers)
-        {
-            if (ru.GetUserId() == ID)
-            {
-                currentRegularUser = ru;
-                Mode="Regular";
-                break;
-            }
-            else
-            {
-                Console.WriteLine("Invalid ID");
-            }
-        }
-        break;
+    bool found = false;
+    foreach (RegularUser ru in Data.allRegularUsers)
+    {
+           if (ru.GetUserId() == ID)
+           {
+              currentRegularUser = ru;
+              Mode = "Regular";
+              found = true;
+              break;
+           }
+    }
+           if (!found)
+           {
+            Console.WriteLine("Invalid ID");
+           }
+          break;
+
     case 'G':
         foreach (GuestUser gu in Data.allGuestUsers)
-        {
-            if (gu.GetUserId() == ID)
-            {
-                currentGuestUser = gu;
-                Mode="Guest";
-                break;
-            }
-            else
-            {
-                Console.WriteLine("Invalid ID");
-            }
-        }
-        break;
+         {
+           if (ru.GetUserId() == ID)
+           {
+              currentRegularUser = ru;
+              Mode = "Regular";
+              found = true;
+              break;
+           }
+         }
+           if (!found)
+           {
+            Console.WriteLine("Invalid ID");
+           }
+          break;
     case 'A':
         foreach (AdminUser au in Data.allAdminUsers)
-        {
-            if (au.GetUserId() == ID)
-            {
-                currentAdminUser = au;
-                Mode="Admin";
-                break;
-            }
-            else
-            {
-                Console.WriteLine("Invalid ID");
-            }
-        }
-        break;
+         {
+           if (ru.GetUserId() == ID)
+           {
+              currentRegularUser = ru;
+              Mode = "Regular";
+              found = true;
+              break;
+           }
+         }
+           if (!found)
+           {
+            Console.WriteLine("Invalid ID");
+           }
+          break;
     default:
         Console.WriteLine("Invalid ID");
         break;
