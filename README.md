@@ -1,5 +1,5 @@
 <!-- Header -->
-<img width="120" height="120" alt="ChatGPT Image Dec 15, 2025, 04_01_11 PM" src="https://github.com/user-attachments/assets/b248ec5c-b93a-4bf5-a152-e913460959ac" />
+
 
 <table>
   <tr>
