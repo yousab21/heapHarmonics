@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SHELL_Chat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b33fe409a1f075b28cc3f9fde126533b9a5274ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5be12117d1213ab211ae3987cec95c318e884deb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SHELL_Chat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SHELL_Chat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
