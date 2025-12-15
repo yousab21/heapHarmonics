@@ -44,8 +44,8 @@ class main
           break;
 
     case 'G':
-        foreach (GuestUser gu in Data.allGuestUsers)
-         {
+    foreach (GuestUser gu in Data.allGuestUsers)
+    {
            if (ru.GetUserId() == ID)
            {
               currentRegularUser = ru;
@@ -53,15 +53,15 @@ class main
               found = true;
               break;
            }
-         }
+    }
            if (!found)
            {
             Console.WriteLine("Invalid ID");
            }
           break;
     case 'A':
-        foreach (AdminUser au in Data.allAdminUsers)
-         {
+    foreach (AdminUser au in Data.allAdminUsers)
+    {
            if (ru.GetUserId() == ID)
            {
               currentRegularUser = ru;
@@ -69,7 +69,7 @@ class main
               found = true;
               break;
            }
-         }
+    }
            if (!found)
            {
             Console.WriteLine("Invalid ID");
