@@ -4,7 +4,7 @@
 <table>
   <tr>
     <td width="140" align="center">
-      <img width="140" height="140" alt="ChatGPT Image Dec 15, 2025, 04_01_11 PM" src="https://github.com/user-attachments/assets/b248ec5c-b93a-4bf5-a152-e913460959ac" />
+      <img width="120" height="120" alt="ChatGPT Image Dec 15, 2025, 04_01_11 PM" src="https://github.com/user-attachments/assets/b248ec5c-b93a-4bf5-a152-e913460959ac" />
     </td>
     <td align="left">
       <h1>Shell Chat</h1>
