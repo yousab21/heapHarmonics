@@ -19,14 +19,18 @@ class main
   public static RegularUser currentRegularUser ;
   public static GuestUser currentGuestUser ;
   public static AdminUser currentAdminUser ;
+
+  
   public static void SwitchUser(string ID)
   {
 {
 
+    bool found = false;
+
  switch (ID[0])
  {
     case 'R':
-    bool found = false;
+
     foreach (RegularUser ru in Data.allRegularUsers)
     {
            if (ru.GetUserId() == ID)
@@ -46,10 +50,10 @@ class main
     case 'G':
     foreach (GuestUser gu in Data.allGuestUsers)
     {
-           if (ru.GetUserId() == ID)
+           if (gu.GetUserId() == ID)
            {
-              currentRegularUser = ru;
-              Mode = "Regular";
+              currentGuestUser = gu;
+              Mode = "Guest";
               found = true;
               break;
            }
@@ -62,10 +66,10 @@ class main
     case 'A':
     foreach (AdminUser au in Data.allAdminUsers)
     {
-           if (ru.GetUserId() == ID)
+           if (au.GetUserId() == ID)
            {
-              currentRegularUser = ru;
-              Mode = "Regular";
+              currentAdminUser = au;
+              Mode = "Admin";
               found = true;
               break;
            }

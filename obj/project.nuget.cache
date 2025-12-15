@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XJjDlJwpdms=",
+  "dgSpecHash": "5V5AtWVBCsRMWSg68qUCVnx2mChVcwwsEH4cL0Dml2F9EtNfOgAWIIuBIqc5BX+zEb1mv3QA6KwupnNmkgypVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omarm\\Documents\\GitHub\\heapHarmonics\\SHELL_Chat.csproj",
+  "projectFilePath": "/home/yousab/heapHarmonics/SHELL_Chat.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\omarm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+    "/home/yousab/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/yousab/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/yousab/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

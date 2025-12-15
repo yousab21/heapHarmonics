@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\omarm\\.nuget\\packages\\": {}
+    "/home/yousab/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omarm\\Documents\\GitHub\\heapHarmonics\\SHELL_Chat.csproj",
+      "projectUniqueName": "/home/yousab/heapHarmonics/SHELL_Chat.csproj",
       "projectName": "SHELL_Chat",
-      "projectPath": "C:\\Users\\omarm\\Documents\\GitHub\\heapHarmonics\\SHELL_Chat.csproj",
-      "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omarm\\Documents\\GitHub\\heapHarmonics\\obj\\",
+      "projectPath": "/home/yousab/heapHarmonics/SHELL_Chat.csproj",
+      "packagesPath": "/home/yousab/.nuget/packages/",
+      "outputPath": "/home/yousab/heapHarmonics/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/yousab/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -38,13 +38,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -66,15 +60,11 @@
             "version": "[6.0.36, 6.0.36]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
             "version": "[6.0.36, 6.0.36]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.36, 6.0.36]"
           }
         ],
@@ -83,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
       }
     }
   }
